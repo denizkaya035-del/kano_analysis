@@ -1,0 +1,12 @@
+import pandas as pd
+
+def load_raw_data():
+    df = pd.read_csv("data/Whatnot Community Feedback Survey.csv")
+    return df
+
+
+df_survey=load_raw_data()
+
+print(df_survey.shape)
+print(df_survey.columns)
+print(df_survey.head())
